@@ -43,6 +43,14 @@
         flex-direction: column;
     }
     
+    .navbar-logo-hamburger img {
+        z-index: 100;
+    }
+    
+    header img {
+        z-index: -2;
+    }
+    
     .navbar-links {
         display: none;
     }
@@ -74,6 +82,7 @@
         background: hsl(256, 26%, 20%);
         padding: 80px 20px;
         z-index: -2;
+        position: relative;
     }
     
     .center-border {
@@ -82,6 +91,7 @@
         padding: 10px;
         border: 1px solid white;
         text-transform: uppercase;
+        text-align: center;
     }
     
     .center-border:hover {
@@ -111,6 +121,7 @@
     
     footer {
         margin-bottom: 100px;
+        background-color: hsl(0, 0%, 98%);
     }
     
     .hr-into-main {
@@ -139,7 +150,7 @@
     hr {
         border-color: purple;
         background-color: purple;
-        margin: 150px 25% -10px 25%;
+        margin: auto 25% -10px 25%;
     }
     
     .main-svg {
@@ -154,7 +165,7 @@
     
     .main-foot {
         width: 80vw;
-        height: 300px;
+        height: 41vh;
         background: hsl(256, 26%, 20%);
         margin: 150px auto;
         display: flex;
@@ -168,6 +179,11 @@
         color: white;
         margin: 60px 18px 65px;
         z-index: -2;
+    }
+    
+    main {
+        margin-top: 24vw;
+        ;
     }
     
     .main-foot img {
@@ -194,7 +210,19 @@
     }
     
     .fb:hover {
-        color: blue;
+        background-color: blue;
+    }
+    
+    .twitter:hover {
+        background-color: lightblue;
+    }
+    
+    .printerest:hover {
+        background-color: purple;
+    }
+    
+    .instagram:hover {
+        background-color: yellow;
     }
     
     footer hr {
@@ -221,6 +249,13 @@
         padding: 10px;
         margin: 10px auto;
         cursor: pointer;
+        font-weight: 700;
+    }
+    
+    .main-foot .desktop {
+        right: 0;
+        left: auto;
+        height: 100%;
     }
     
     @media (min-width: 801px) {
@@ -228,6 +263,9 @@
             flex-direction: row;
             justify-content: space-between;
             margin: auto 100px;
+        }
+        .mobile {
+            display: none;
         }
         .hamburger,
         .first-lines,
@@ -265,6 +303,10 @@
             right: 9vw;
             position: absolute;
         }
+        .main-box div:nth-of-type(2),
+        .main-box div:nth-of-type(1) {
+            margin-right: min(40px);
+        }
         .main-purple-container {
             width: 50vw;
             margin-left: 5vw;
@@ -283,9 +325,76 @@
             background-color: hsl(216, 30%, 68%);
             margin: 0 auto auto 20px;
         }
+        main {
+            margin-left: 10vw;
+            margin-right: 5vw;
+            display: flex;
+            flex-direction: column;
+        }
+        main h1 {
+            margin-bottom: 10vh;
+        }
+        main * {
+            text-align: left;
+        }
+        .main-box {
+            display: flex;
+        }
+        .main-foot {
+            flex-direction: row;
+            justify-content: space-between;
+            height: 20vh;
+        }
+        .main-foot h2,
+        .main-foot div {
+            margin: auto 8vw;
+        }
+        .main-foot div {
+            min-width: 150px;
+        }
+        .main-foot h2 {
+            margin-right: 15vw;
+        }
+        footer {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            margin-top: 150px;
+        }
+        footer hr {
+            background-color: white;
+            border-color: whitesmoke;
+        }
+        .foot-st-container {
+            display: flex;
+            margin: auto 120px;
+            justify-content: space-between;
+            align-items: space-between;
+        }
+        main hr {
+            margin-left: 0;
+            width: 10%;
+        }
+        .foot-st-container>.logo-footer,
+        .foot-st-container>.social-media-container {
+            margin: 20px 20px -10px 0px;
+        }
+        footer * {
+            z-index: 0;
+        }
+        .footer-list-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        footer li {
+            margin: 0px;
+        }
     }
     
     @media(max-width: 800px) {
+        .desktop {
+            display: none;
+        }
         .navbar-list {
             padding: 0;
         }
