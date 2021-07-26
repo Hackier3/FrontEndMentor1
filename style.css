@@ -353,9 +353,11 @@
             justify-content: space-between;
             height: 20vh;
         }
-        .main-foot h2,
         .main-foot div {
-            margin: auto 8vw;
+            margin: auto 5vw auto auto;
+        }
+        .main-foot h2 {
+            margin: auto auto auto 5vw;
         }
         .main-foot div {
             min-width: 150px;
