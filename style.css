@@ -37,13 +37,13 @@
         margin: 0;
     }
     
-    navbar {
+    nav {
         display: flex;
         background-color: white;
         flex-direction: column;
     }
     
-    .navbar-logo-hamburger img {
+    .nav-logo-hamburger img {
         z-index: 100;
     }
     
@@ -51,18 +51,18 @@
         z-index: -2;
     }
     
-    .navbar-links {
+    .nav-links {
         display: none;
     }
     
-    .navbar-logo-hamburger {
+    .nav-logo-hamburger {
         display: flex;
         align-items: center;
         justify-content: space-between;
         position: relative;
     }
     
-    navbar img {
+    nav img {
         margin: 20px;
     }
     
@@ -81,7 +81,7 @@
     .bottom-header {
         background: hsl(256, 26%, 20%);
         padding: 80px 20px;
-        z-index: -2;
+        z-index: 0;
         position: relative;
     }
     
@@ -161,6 +161,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-left: -40px;
     }
     
     .main-foot {
@@ -178,7 +179,7 @@
     .main-foot h2 {
         color: white;
         margin: 60px 18px 65px;
-        z-index: -2;
+        z-index: 0;
     }
     
     main {
@@ -259,7 +260,7 @@
     }
     
     @media (min-width: 801px) {
-        navbar {
+        nav {
             flex-direction: row;
             justify-content: space-between;
             margin: auto 100px;
@@ -280,12 +281,12 @@
         .main-photo-mobile {
             display: none;
         }
-        .navbar-links,
+        .nav-links,
         .bottom-header {
             display: flex;
             flex-direction: row;
         }
-        .navbar-list li {
+        .nav-list li {
             display: inline-block;
             width: auto;
         }
@@ -405,16 +406,16 @@
         .desktop {
             display: none;
         }
-        .navbar-list {
+        .nav-list {
             padding: 0;
         }
-        .navbar-links.active {
+        .nav-links.active {
             display: flex;
         }
         body.active {
             overflow: hidden;
         }
-        .navbar-links {
+        .nav-links {
             position: fixed;
             justify-content: center;
             background: rgb(54, 53, 54);
@@ -422,7 +423,7 @@
             right: 0;
             left: 0;
         }
-        .navbar-list li {
+        .nav-list li {
             color: white;
         }
         .list-last-element:hover {
