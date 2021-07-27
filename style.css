@@ -161,12 +161,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-left: -40px;
     }
     
     .main-foot {
         width: 80vw;
-        height: 41vh;
+        min-height: 41vh;
         background: hsl(256, 26%, 20%);
         margin: 150px auto;
         display: flex;
@@ -405,6 +404,9 @@
     @media(max-width: 800px) {
         .desktop {
             display: none;
+        }
+        .center-border {
+            margin-bottom: 40px;
         }
         .nav-list {
             padding: 0;
